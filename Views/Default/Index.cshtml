@@ -1,0 +1,30 @@
+﻿@model List<BookShelf.Models.Books>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>AUTHOR</th>
+    </tr>
+    
+        @foreach(var b in Model)
+        {
+            <tr>
+                <td>@b.Id</td>
+            <td>@b.Title</td>
+            <td>@b.Author</td>
+            </tr>
+            
+        }
+    
+</table>
+
+<link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/twitter-bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="~/twitter-bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
